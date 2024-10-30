@@ -1,0 +1,103 @@
+/**
+ * Plugin Name: Better Category Selector for WooCommerce
+ * Version: 1.0.5
+ * Description: Better Category Selector for WooCommerce provides an alternative, easier to use GUI for putting products in categories.
+ * Author: NO.BrainerAPPs / HisDesigns LLC
+ * Author URI: http://no.brainerapps.com
+ * Plugin URI: http://no.brainerapps.com
+ * Text Domain: better-category-selector-for-woocommerce
+ *
+ * Copyright: (c) 2022, HisDesigns LLC
+ *
+ */
+
+.hide_old_meta_box {
+  visibility:hidden;
+  position:absolute;
+}
+
+.show_old_meta_box {
+  visibility:visible;
+  position:static;
+}
+
+
+.admin_page_bcs-category-selector #wpbody-content {
+  padding-bottom:25px;
+}
+
+.admin_page_bcs-category-selector #adminmenumain,
+.admin_page_bcs-category-selector #wpadminbar,
+.admin_page_bcs-category-selector #adminmenuback,
+.admin_page_bcs-category-selector #adminmenuwrap,
+.admin_page_bcs-category-selector .update-nag,
+.admin_page_bcs-category-selector .notice,
+.admin_page_bcs-category-selector .error,
+.admin_page_bcs-category-selector #wpfooter {
+  display:none !important;
+}
+
+.admin_page_bcs-category-selector #wpbody {
+  margin-top:-32px;
+}
+
+.admin_page_bcs-category-selector #wpcontent {
+  margin-left:0px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.admin_page_bcs-category-selector .bcs_categorydiv div.tabs-panel {
+  max-height:100%;
+  height:500px;
+}
+
+.admin_page_bcs-category-selector #product_cat-all.bcs-pro .categorychecklist li {
+  padding-left:30px;
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist li {
+  display:block;
+  position:relative;
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist li.bcs-is-selected > label {
+  background:#f1f1f1;
+  width:100%;
+  display:block;
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist li.bcs-has-child .bcs_expander_icon {
+  position:absolute;
+  left:5px;
+  width:30px;
+  height:1em;
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist li.bcs-has-child .bcs_expander_icon:before {
+  content:"\2795";
+  cursor: pointer;
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist li.bcs-has-child.bcs-show-children > .bcs_expander_icon:before {
+  content:"\2796";
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist .bcs-has-child .children {
+  display:none;
+}
+
+.admin_page_bcs-category-selector #product_cat-all .categorychecklist .bcs-has-child.bcs-show-children > .children {
+  display:block;
+}
+/*d67b2f*/
+#bcs-upgrade-ad {
+  background:#ffb2b2;
+  padding:10px;
+  border:1px #000 solid;
+}
+
+#bcs-upgrade-ad .nobrainer_logo {
+  float:right;
+  max-width:150px;
+}
